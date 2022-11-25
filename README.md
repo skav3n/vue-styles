@@ -1,4 +1,4 @@
-# mph-helper
+# vue-styles
 
 ### Create tag
 ```
@@ -18,13 +18,13 @@ git push --delete origin <tagname>
 
 ### Full import Element Plus
 ```
-@use '~mph-helper/index';
+@use '~vue-styles/index';
 ```
 
 ### Manually import Element Plus
 ```
-@use '~mph-helper/styles/element-variables';
+@use '~vue-styles/styles/element-variables';
 @use '~element-plus/theme-chalk/src/<element_component>';
-@use '~mph-helper/styles/element-styles';
-@use '~mph-helper/styles/core';
+@use '~vue-styles/styles/element-styles';
+@use '~vue-styles/styles/core';
 ```
