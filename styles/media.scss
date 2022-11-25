@@ -1,0 +1,36 @@
+@use 'sass:map';
+
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1920px;
+
+$breakpoints: (
+        'xs': '(max-width: #{$sm})',
+        'sm': '(min-width: #{$sm})',
+        'md': '(min-width: #{$md})',
+        'lg': '(min-width: #{$lg})',
+        'xl': '(min-width: #{$xl})',
+);
+
+@mixin container {
+  width: 100%;
+  max-width: $lg;
+  margin: 0 auto;
+}
+
+@mixin xs-only {
+  @media #{map.get($breakpoints, 'xs')} { @content }
+}
+@mixin sm-and-up {
+  @media #{map.get($breakpoints, 'sm')} { @content }
+}
+@mixin md-and-up {
+  @media #{map.get($breakpoints, 'md')} { @content }
+}
+@mixin lg-and-up {
+  @media #{map.get($breakpoints, 'lg')} { @content }
+}
+@mixin xl-only {
+  @media #{map.get($breakpoints, 'xl')} { @content }
+}

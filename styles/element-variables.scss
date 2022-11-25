@@ -1,0 +1,100 @@
+@use 'variables' as *;
+@use 'media';
+
+@forward '~element-plus/theme-chalk/src/common/var' with (
+  $colors: (
+    primary: (base: $color-primary),
+    info: (base: $color-contrast),
+    danger: (base: $color-tertiary),
+    error: (base: $color-tertiary),
+    success: (base: $color-accent),
+  ),
+  $card: (
+    'border-radius': 0,
+  ),
+  $font-family: (
+    '': 'Outfit, sans-serif',
+  ),
+  $text-color: (
+    'placeholder': $color-contrast,
+    'disabled': $color-disabled,
+  ),
+  $input: (
+    'focus-border-color': $color-secondary,
+  ),
+  $select: (
+    'input-focus-border-color': $color-secondary,
+  ),
+  $button: (
+    'bg-color': $color-light,
+    'text-color': $color-primary,
+    'hover-text-color': $color-contrast,
+    'hover-bg-color': $color-light,
+    'hover-border-color': $color-light,
+    'active-border-color': $color-light,
+    'outline-color': $color-light,
+  ),
+  $button-padding-vertical: (
+    'large': 15px,
+  ),
+  $button-padding-horizontal: (
+    'large': 20px,
+  ),
+  $switch: (
+    'on-color': $color-accent,
+    'off-color': $color-tertiary,
+  ),
+  $checkbox: (
+    'font-size': var(--el-font-size-base),
+    'input-height': 20px,
+    'input-width': 20px,
+    'border-radius': var(--el-border-radius-base),
+    'text-color': $color-light,
+    'checked-text-color': $color-light,
+    'checked-bg-color': white,
+    'checked-icon-color': $color-primary,
+    'checked-input-border-color': none,
+    'input-border-color-hover': $color-secondary,
+  ),
+  $radio: (
+    'font-size': var(--el-font-size-base),
+    'input-height': 20px,
+    'input-width': 20px,
+    'text-color': $color-light,
+    'input-bg-color': $color-light,
+    'input-border-color-hover': $color-secondary,
+  ),
+  $radio-checked: (
+    'text-color': $color-light,
+    'icon-color': $color-light,
+    'input-border-color': $color-light,
+  ),
+  $select-group: (
+    'height': var(--el-component-size-large),
+  ),
+  $input-font-size: (
+    'large': var(--el-font-size-base),
+  ),
+  $common-component-size: (
+    'large': 46px,
+    'default': 32px,
+    'small': 24px,
+  ),
+  $font-size: (
+    'extra-large': 22px,
+    'large': 20px,
+    'medium': 18px,
+    'base': 16px,
+    'small': 14px,
+    'extra-small': 12px,
+  ),
+  $alert: (
+    'padding': 20px 15px,
+    'title-font-size': var(--el-font-size-base),
+    'description-font-size': var(--el-font-size-base),
+  ),
+  $sm: media.$sm,
+  $md: media.$md,
+  $lg: media.$lg,
+  $xl: media.$xl,
+);
